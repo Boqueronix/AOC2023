@@ -12,10 +12,10 @@ public class Day6Challenge2 {
         long time = Long.parseLong(input.substring(5).replace(" ", ""));
         input = scanner.nextLine();
         long record = Long.parseLong(input.substring(9).replace(" ", ""));
-        System.out.println("Product: " + calculatePosibilities(new Race(time, record)));
+        System.out.println("Product: " + calculatePossibilities(new Race(time, record)));
     }
 
-    private static int calculatePosibilities(Race race){
+    private static int calculatePossibilities(Race race){
         long record = race.record;
         int possibilities = 0;
         for (int i = 1; i < race.time; i++){
