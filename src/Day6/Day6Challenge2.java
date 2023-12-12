@@ -15,9 +15,9 @@ public class Day6Challenge2 {
         System.out.println("Product: " + calculatePossibilities(new Race(time, record)));
     }
 
-    private static int calculatePossibilities(Race race){
+    private static long calculatePossibilities(Race race){
         long record = race.record;
-        int possibilities = 0;
+        long possibilities = 0;
         for (int i = 1; i < race.time; i++){
             long distance = i * (race.time - i);
             if (distance > record){
